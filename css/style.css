@@ -1,0 +1,566 @@
+html {    box-sizing: border-box;  }
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, Roboto;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: none; /* управлять регистром символов */
+}
+
+  body >* {
+    background: rgba(255, 0, 0, 0.3)
+  }
+
+  body >*>* {
+    background: rgba(255, 255, 0, 0.3)
+  }
+
+  body >*>*>* {
+    background: rgba(0, 0, 255, 0.3)
+  }
+
+  body >*>*>*>* {
+    background: rgba(0, 255, 0, 0.3)
+  }
+
+.main-header,
+.inner-main-header {
+  background-color: #eeeeee;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 545px; на главной */
+}
+
+.inner-main-header {
+  margin-bottom: 60px;
+  /* min-height: 355px; */
+}
+
+.main-navigation {
+  display: flex;
+  margin: 0 auto;
+  margin-top:50px;
+  margin-bottom: 20px;
+  width: 1160px;
+  padding: 0px 20px;
+}
+
+.inner-main-navigation {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  width: 1160px;
+  padding: 0px 20px;
+}
+
+.container-navigation {
+  display: flex;
+  width: 800px;
+  margin: 0px;
+  padding: 0px;
+  /* justify-content: space-between; */
+}
+
+.page-title { /* Магазин_готовых_шаблонов  */
+  font-size: 55px;
+  line-height: 55px;
+  order: 2;
+  margin: 0px auto;
+  padding: 0px;
+  margin-bottom: 117px;
+}
+
+.site-navigation { /*У списков сбросил дефолтный стиль, отступы и зададим минимальную высоту*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.basket-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:focus {
+  opacity: 0.3;
+}
+
+.main-header-logo {
+  margin-right: 200px;
+  align-items: flex-start;
+}
+
+.header-slider {
+  min-height: 413px;
+  width: 1160px;
+  padding: 0px 20px;
+}
+
+a {
+  text-decoration: none; /*отменил у ссылок подчеркивание, назначается браузером по умолчанию. */
+}
+
+.site-navigation,
+.basket-navigation,
+.list-order,
+.social-blok,
+.catalog-list,
+.mesh-filter,
+.filter-features,
+.pagination-list {
+  list-style: none; /* Перед элементами ненумерованного спика по умолчанию ставятся маркеры. Отменим это для списков в навигации */
+}
+
+.site-navigation a, /* по умолчанию ссылки синие, задал черный */
+.basket-navigation a,
+.pagination-list a,
+.footer-container a {
+  text-transform: uppercase;
+  color: #000000; /*(0, 0, 0,) (0, 0, 0, 0.5) чёрный, непрозрачный на 50% */
+}
+
+.list-order a { /* задал белый цвет текста ссылке "заказать" */
+  line-height: 18px;
+  color: #ffffff; /* rgb(255, 255, 255) */
+}
+
+.current .active { /* подчеркивание активной страницы в нав */
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 13px;
+  width: 74px;
+}
+
+.site-navigation a:hover,  /* :hover для наведения, меняет цвет  */
+.basket-navigation a:hover {
+  color: rgb(251, 86, 90);
+}
+
+.site-navigation a:focus,   /* :focus для фокусировки, меняет цвет */
+.basket-navigation a:focus {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.visually-hidden { /* спрятал текст */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ .container-1 { /* веб сайты на главной */
+  display: flex;
+  width: 1160px;
+  min-height: 350px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 0px 20px;
+}
+
+.container-2 { /* приложения на главной */
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container-3 { /* презентации на главной */
+  width: 300px;
+  margin-right: 100px;
+}
+
+.presentation-order {
+  margin-right: 60px;
+}
+
+.product-header-1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-slogan-1 {
+  color: rgb(40, 49, 54); /* #283136 */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-1 {
+  /* inline: block;  */
+  background-color: #fb565a;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+}
+
+.button-1:hover {
+  background-color: #e74246;
+  /* color: rgb(255, 255, 255,) */
+}
+/* color: rgb(255, 255, 255, 0.0)  */
+.button-1:focus {
+  background-color: #d7373b;
+  color: #e06366;
+  box-shadow: inset 0px 3px 0px 0px #c13135;
+  outline: none;
+
+}
+
+.product-header-2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-slogan-2 {
+  color: rgb(40, 49, 54); /* #283136 */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-2 {
+  /* inline: block; */
+  background-color: #00ca74;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+}
+
+.button-2:hover {
+  background-color: #00bc6c;
+}
+
+.button-2:focus {
+  background-color: #00aa62;
+  color: #4dc491;
+  box-shadow: inset 0px 3px 0px 0px #009958;
+  outline: none;
+}
+
+.product-header-3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-slogan-3 {
+  color: rgb(40, 49, 54); /* #283136 */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-3 {
+  /* inline: block; */
+  background-color: #efc84a;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+}
+
+.button-3:hover {
+  background-color: #eab534;
+}
+
+.button-3:focus {
+  background-color: #e5a722;
+  color: #edc265;
+  box-shadow: inset 0px 3px 0px 0px #ce961f;
+  outline: none;
+}
+
+/* .slider-2 { обозначил наличие слайдера
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 0px;
+}
+
+.map {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0px;
+} */
+
+
+.catalog-columns {
+  display: flex;
+  width: 1160px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  margin-bottom: 60px; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filters {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter { 
+  /* display: flex; */
+  width: 260px;
+  min-height: 700px;
+  padding: 0px;
+  margin: 0px;
+  /* margin-right: 140px; */
+}
+
+.catalog {
+  padding: 0px;
+  margin: 0px;
+}
+
+.catalog-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 760px;
+  flex-wrap: wrap;
+  min-height: 1915px;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: column;
+}
+
+.semi {
+  opacity: 0.12;
+}
+
+.pagination-list {
+  display: flex;
+  width: 445px;
+  min-height: 50px;
+  margin: 0px;
+  margin-left: 400px;
+  padding: 0px;
+  align-self: flex-end;
+}
+
+.container-pagination {
+  display: flex;
+  width: 1160px;
+  margin: 0px auto;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+}
+
+.main-footer {
+  background-color:#ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-container {
+  display: flex;
+  width: 1160px;
+  min-height: 218px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.social-blok {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 260px;
+  /* margin-top: 70px;
+  margin-bottom: 70px; */
+  margin-right: 140px;
+  align-items: center;
+
+  /* align-content: center; */
+  
+}
+
+.footer-slogan {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  /* margin-top: 80px;
+  margin-bottom: auto; */
+}
+
+.text-call { /* Давайте дружить, это выгодно! */
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 13px;
+}
+
+.text-benefit { /* Скидка_10__для_друзей_из_социальных_сетей */
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  line-height: 22px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*.social-button-vk {
+   background-image: url("img/vk-icon.svg");
+  border-radius: 50%; 
+}*/
+
+/*.social-button-fb {
+     background-image: url("img/fb-icon.svg");
+    border-radius: 50%; 
+  }*/
+
+/*.social-button-instagram {
+   background-image: url("img/insta-icon.svg");
+  border-radius: 50%; 
+}*/
+
+
+.modal { /* для формы */
+  color: #000000;
+  background-color: #ffffff; /* rgb(255, 255, 255) */
+  background-position: 0 0;
+  border: 2px solid #dbdbdb;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.name-form,
+.email-form,
+.message-form {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.name-form-field,
+.email-form-field,
+.message-form-field {
+  color: #a1a1a1; 
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.name-form-field:hover {
+  color: #b4b9bb;
+  border: 2px solid #b4b9bb;
+}
+
+.name-form-field:focus {
+  color: #444444;
+  border: 2px solid #000000;
+  outline: none; /* удалил обводку рамки при активации */
+}
+
+.name-form input:invalid {
+  background-color: #e74462; /* Красный цвет фона полю имя */
+  color:  #e74462;
+}
+
+.button-form {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.filter fieldset { /* убрал обводку у <fieldset>  */
+  border: none;
+}
+
+.mesh-filter,
+.filter-features {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.name-filter  {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.name-filter label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.filter-button {
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+  border: none;
+  width: 260px;
+  height: 50px;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px 0px #bfbfbf;
+  outline: none;
+}
+

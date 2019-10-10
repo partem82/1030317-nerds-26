@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="inner-main-header">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <nav class="inner-main-navigation">
+      <a class="main-header-logo" href="index.html"> <img src="img/index-logo.svg" width="160" height="65"
+          alt="Логотип Нердс в каталоге">
+      </a>
+      <div class="container-navigation">
+        <ul class="site-navigation">
+          <li class="studio"><a href="studio.html">студия</a></li>
+          <li class="customers"><a href="customers.html">клиенты</a></li>
+          <li class="current"><a class="active" href="shop.html">магазин</a></li>
+          <li class="contacts"><a href="contacts.html">контакты</a></li>
+        </ul>
+        <ul class="basket-navigation">
+          <li class="basket-buyer"><a href="basket.html">корзина</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="catalog-columns">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="name-filter">сетка:</legend>
+            <ul class="mesh-filter">
+              <li class="filter-option">
+                <input type="radio" name="grid-option" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">
+                  Адаптивная
+                </label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="grid-option" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">
+                  Фиксированная
+                </label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="grid-option" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">
+                  Резиновая
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="name-filter">особенности:</legend>
+            <ul class="filter-features">
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
+                  checked>
+                <label for="filter-slider">
+                  Слайдер
+                </label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="advantage-block"
+                  id="filter-advantage-block">
+                <label for="filter-advantage-block">
+                  Блок преимуществ
+                </label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">
+                  Новости
+                </label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">
+                  Галерея
+                </label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">
+                  Корзина
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button">показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <ul class="catalog-list">
+          <!-- <li class="catalog-item">
+              <h3>
+                <a href="catalog-item.html">
+                  <span class="catalog-category">Седона</span>
+                </a>
+                  <span class="catalog-item-title">Информационный сайт для туристов</span>
+              </h3>
+                <p class="catalog-item-image">
+                  <a href="catalog-item.html">
+                    <img src="img/produkt-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
+                  </a>
+                </p>
+                <a class="button" href="#">9 900 РУБ.</a>
+            </li> -->
+            <li class="catalog-item">
+            <h3 class="visually-hidden">Седона</h3>
+            <img class="semi" src="img/browser.svg" width="360" height="40" alt="браузер Sedona">
+            <img src="img/produkt-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
+            <!-- <p>
+            <span class="catalog-category">SEDONA</span>
+            <span class="catalog-item-title">Информационный сайт для туристов</span>
+            <a class="button" href="#">9 900 РУБ.</a>
+          </p> -->
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Шаблон Pink</h3>
+            <img class="semi" src="img/browser.svg" width="360" height="40" alt="браузер Pink">
+            <img src="img/produkt-pink.jpg" width="360" height="576" alt="Pink">
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Шаблон Бородинский</h3>
+            <img class="semi" src="img/browser.svg" width="360" height="40" alt="браузер Бородинский">
+            <img src="img/produkt-barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп Бородинский">
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Шаблон Mishka</h3>
+            <img class="semi" src="img/browser.svg" width="360" height="40" alt="браузер Mishka">
+            <img src="img/produkt-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Шаблон А+</h3>
+            <img class="semi" src="img/browser.svg" width="360" height="40" alt="браузер А+">
+            <img src="img/produkt-aplus.jpg" width="360" height="576" alt="Шаблон А+">
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Шаблон Кваст</h3>
+            <img class="semi" src="img/browser.svg" width="360" height="40" alt="браузер Кваст">
+            <img src="img/produkt-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- <div class="container-pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item "><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item pagination-item-the_next"><a href="#">следующая</a></li>
+      </ul>
+    </div> -->
+
+  </main>
+  <footer class=main-footer>
+    <div class="footer-container">
+      <ul class="social-blok">
+        <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+        <li><a class="social-button-fb" href="#">Фейсбук</a></li>
+        <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+      </ul>
+      <div class="footer-slogan">
+        <p class="text-call">Давайте дружить, это выгодно!</p>
+        <p class="text-benefit">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <section>
+    <form class="connections-form" method="post" action="https://echo.htmlacademy.ru">
+      <h2>Напишите нам</h2>
+      <p>
+        <label class="name-form" for="user-name">Ваше имя:</label>
+        <input class="name-form-field" type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label class="email-form" for="user-email">Ваш e-mail:</label>
+        <input class="email-form-field" type="email" name="e-mail" id="user-email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label class="message-form" for="user-message">Текст письма:</label>
+        <input class="message-form-field" type="text" name="message" id="user-message" placeholder="В свободной форме">
+      </p>
+      <button class="button-form" type="submit">отправить</button>
+      <button class="modal-close" type="button">закрыть</button>
+    </form>
+  </section>
+</body>
+</html>

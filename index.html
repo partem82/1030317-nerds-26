@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo"> <img src="img/index-logo.svg" width="160" height="65" alt="Логотип Нердс на главной">
+      </a>
+      <div class="container-navigation">
+        <ul class="site-navigation">
+          <li class="studio"><a href="studio.html">студия</a></li>
+          <li class="customers"><a href="customers.html">клиенты</a></li>
+          <li class="inner"><a href="inner.html">магазин</a></li>
+          <li class="contacts"><a href="contacts.html">контакты</a></li>
+        </ul>
+        <ul class="basket-navigation">
+          <li class="basket-buyer"><a href="basket.html">корзина</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="header-slider">слайдер</div> -->
+  </header>
+
+  <main class="containеr">
+    <section class="order container-1">
+      <h2 class="visually-hidden">Блок заказа</h2>
+      <ul class="list-order container-2">
+        <li class="order-web-site container-3">
+          <img src="img/illustration-1.png" width="300" height="146" alt="илюстрация веб-сайт">
+          <h3 class="product-header-1">веб-сайты</h3>
+          <p class="text-slogan-1">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <!--целесообразно <p> заменить <span> ?-->
+          <a class="button-1" href="order-web-site.html">заказать</a>
+        </li>
+        <li class="order-of-applications container-3">
+          <img src="img/illustration-2.png" width="300" height="146" alt="иллюстрация приложения">
+          <h3 class="product-header-2">приложения</h3>
+          <p class="text-slogan-2">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button-2" href="order-of-applications.html">заказать</a>
+        </li>
+        <li class="presentation-order container-3">
+          <img src="img/illustration-3.png" width="300" height="146" alt="иллюстрация презентации">
+          <h3 class="product-header-3">презентации</h3>
+          <p class="text-slogan-3">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="button-3" href="presentation-order.html">заказать</a>
+        </li>
+      </ul>
+    </section>
+    <!-- <div class="slider-2">
+        мы маленькая, но гордая студия
+      </div>
+      <div class="map">
+        КАРТА
+      </div> -->
+  </main>
+  <footer class=main-footer>
+    <div class="footer-container">
+      <ul class="social-blok">
+        <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+        <li><a class="social-button-fb" href="#">Фейсбук</a></li>
+        <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+      </ul>
+      <div class="footer-slogan">
+        <p class="text-call">Давайте дружить, это выгодно!</p>
+        <p class="text-benefit">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <section class="modal modal-connections">
+    <form class="form-connections" method="post" action="https://echo.htmlacademy.ru">
+      <h2>Напишите нам</h2>
+      <p>
+        <label class="name-form" for="user-name">Ваше имя:</label>
+        <input class="name-form-field" type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label class="email-form" for="user-email">Ваш e-mail:</label>
+        <input class="email-form-field" type="text" name="e-mail" id="user-email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label class="message-form" for="user-message">Текст письма:</label>
+        <input class="message-form-field" type="text" name="message" id="user-message" placeholder="В свободной форме">
+      </p>
+      <button class="button-form" type="submit">отправить</button>
+      <button class="modal-close" type="button">закрыть</button>
+    </form>
+  </section>
+</body>
 </html>
